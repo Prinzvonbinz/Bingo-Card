@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bingo Card Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main-menu">
+    <h1>🎯 Bingo Card Generator</h1>
+    <input type="text" id="cardName" placeholder="Name der neuen Karte">
+    <button onclick="createNewCard()">Neue Karte erstellen</button>
+    <div id="cardList"></div>
+  </div>
+
+  <div id="editor" class="hidden">
+    <h2 id="editorTitle">Karte bearbeiten</h2>
+    <div id="grid" class="grid"></div>
+    <button onclick="saveCard()">Speichern</button>
+    <button onclick="backToMenu()">Zurück</button>
+  </div>
+
+  <div id="play" class="hidden">
+    <h2 id="playTitle">Bingo spielen</h2>
+    <div id="playGrid" class="grid"></div>
+    <button onclick="backToMenu()">Zurück</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
