@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #2a2a2a;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 60%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+.grid input {
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.cell {
+  background-color: #3a3a3a;
+  border-radius: 5px;
+  padding: 10px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cell .category {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.cell.marked {
+  background-color: crimson;
+}
+
+.hidden {
+  display: none;
+}
+
+#cardList {
+  margin-top: 20px;
+}
+
+.card-entry {
+  background-color: #3a3a3a;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 8px;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-entry span {
+  flex: 1;
+  text-align: left;
+}
+
+.card-entry button {
+  margin-left: 5px;
+}
